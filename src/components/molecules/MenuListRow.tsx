@@ -28,7 +28,7 @@ const MenuListRow = () => {
         return (
           <li key={index}>
             <Link
-              className={`px-3 py-1 rounded-sm ${
+              className={`px-3 py-2 rounded-sm ${
                 pathname === item.url
                   ? "text-gray-50 bg-[var(--primary)]"
                   : "text-[var(--primary)] hover:bg-[var(--primary)]/10"

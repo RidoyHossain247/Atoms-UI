@@ -1,22 +1,22 @@
-import Button from '../atoms/Button'
-import Input from '../atoms/Input'
+import Button from "../atoms/Button";
+import Input from "../atoms/Input";
 
 const SearchBar = () => {
   return (
-    <div className='flex flex-nowrap'>
+    <div className="relative">
       <Input
-          placeholder="Search..."
-          inputSize="sm"
-          className="rounded-r-none border-r-0"
-        />
-        <Button
-          label={"Submit"}
-          size="sm"
-          variant="primary"
-          className="rounded-l-none border border-[var(--border)] border-l-0"
-        />
+        placeholder="Search..."
+        inputSize="sm"
+        className="w-80 pr-[80px]"
+      />
+      <Button
+        label={"Submit"}
+        size="sm"
+        variant="primary"
+        className="absolute right-0 top-0 bottom-0 h-full rounded-l-none"
+      />
     </div>
-  )
-}
+  );
+};
 
-export default SearchBar
+export default SearchBar;
